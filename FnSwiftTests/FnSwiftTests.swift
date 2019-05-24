@@ -20,15 +20,42 @@ class FnSwiftTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        Fn.if()
+        fn_if(1 == 3) {
+            print("hello")
         }
+        fn_if(5==6, true: {
+            print("nice")
+        }) {
+            print(3)
+        }
+        
+        fn_if(5 == 6, true: {
+            print(0)
+        }) {
+            print(1)
+        }
+        
+        fn_for(times: 5) { (i) in
+            print(i)
+        }
+        
+//        fn_if(4 == 7, {
+//            print("4 == 7")
+//        }) {
+//            print("nice")
+//        }
+        
+        
     }
 
 }
+
+/*
+ func testPerformanceExample() {
+    // This is an example of a performance test case.
+    self.measure {
+        // Put the code you want to measure the time of here.
+    }
+ }
+ */
