@@ -20,32 +20,15 @@ class FnSwiftTests: XCTestCase {
     }
 
     func testExample() {
-        Fn.if()
-        fn_if(1 == 3) {
-            print("hello")
-        }
-        fn_if(5==6, true: {
-            print("nice")
-        }) {
-            print(3)
-        }
         
-        fn_if(5 == 6, true: {
-            print(0)
-        }) {
-            print(1)
-        }
         
-        fn_for(times: 5) { (i) in
+        fn_for(5) { (i) in
             print(i)
         }
         
-//        fn_if(4 == 7, {
-//            print("4 == 7")
-//        }) {
-//            print("nice")
-//        }
-        
+        fn_until(5) { (i) in
+            print(i)
+        }
         
     }
 

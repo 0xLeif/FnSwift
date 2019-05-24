@@ -9,13 +9,13 @@
 import Foundation
 
 
-protocol Buildable {
+public protocol Buildable {
     init()
     init(_ build: (inout Self) -> Void)
     static func +(_ lhs: inout Self, _ block: (inout Self) -> Void) -> Void
 }
 
-extension Buildable {
+public extension Buildable {
     
     init(_ build: (inout Self) -> Void) {
         var s = Self()

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Bool {
+public extension Bool {
     
     func `if`(_ block: () -> Bool) -> Bool {
         return self ? block() : self

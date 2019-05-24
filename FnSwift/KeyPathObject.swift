@@ -16,12 +16,12 @@ precedencegroup KeyPathPrecedence {
 infix operator ...: KeyPathPrecedence
 
 @discardableResult
-func set<T,E>(obj: inout T, path: ReferenceWritableKeyPath<T, E>, value: E) -> T {
+public func set<T,E>(obj: inout T, path: ReferenceWritableKeyPath<T, E>, value: E) -> T {
     obj[keyPath: path] = value
     return obj
 }
 
-class KPObject<T,E> {
+public class KPObject<T,E> {
     var obj: T
     var path: ReferenceWritableKeyPath<T, E>
     
@@ -31,16 +31,16 @@ class KPObject<T,E> {
     }
 }
 
-func ...<T,E>(obj: T, path: ReferenceWritableKeyPath<T, E>) -> KPObject<T, E> {
+public func ...<T,E>(obj: T, path: ReferenceWritableKeyPath<T, E>) -> KPObject<T, E> {
     return KPObject(obj: obj, path: path)
 }
 
-func ...<T,E>(obj: KPObject<T,E>, path: ReferenceWritableKeyPath<T, E>)  -> KPObject<T, E> {
+public func ...<T,E>(obj: KPObject<T,E>, path: ReferenceWritableKeyPath<T, E>)  -> KPObject<T, E> {
     obj.path = path
     return obj
 }
 
-func +<T,E>(obj: KPObject<T,E>, value: E) -> T {
+public func +<T,E>(obj: KPObject<T,E>, value: E) -> T {
     var o = obj.obj
     set(obj: &o, path: obj.path, value: value)
     return o

@@ -10,12 +10,12 @@ import Foundation
 
 postfix operator ...
 
-protocol Configurable {
+public protocol Configurable {
     func configure<T>(_ configure: (inout T) -> Void) -> T
     static func ...<T>(_ lhs: Self, _ block: (inout T) -> Void) -> T
 }
 
-extension Configurable {
+public extension Configurable {
     
     static func ... <T>(lhs: Self, block: (inout T) -> Void) -> T {
         return lhs.configure(block)
