@@ -10,6 +10,11 @@
 		299BD2352297706F00232736 /* FnSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299BD22B2297706F00232736 /* FnSwift.framework */; };
 		299BD23A2297706F00232736 /* FnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD2392297706F00232736 /* FnSwiftTests.swift */; };
 		299BD23C2297706F00232736 /* FnSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 299BD22E2297706F00232736 /* FnSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299BD2462297708000232736 /* FnSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD2452297708000232736 /* FnSwift.swift */; };
+		299BD248229770C300232736 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD247229770C300232736 /* Buildable.swift */; };
+		299BD24A2297713400232736 /* KeyPathObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD2492297713400232736 /* KeyPathObject.swift */; };
+		299BD24C2297722700232736 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD24B2297722700232736 /* Configurable.swift */; };
+		299BD24E2297727A00232736 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD24D2297727A00232736 /* Condition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		299BD2342297706F00232736 /* FnSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FnSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299BD2392297706F00232736 /* FnSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FnSwiftTests.swift; sourceTree = "<group>"; };
 		299BD23B2297706F00232736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299BD2452297708000232736 /* FnSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FnSwift.swift; sourceTree = "<group>"; };
+		299BD247229770C300232736 /* Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
+		299BD2492297713400232736 /* KeyPathObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathObject.swift; sourceTree = "<group>"; };
+		299BD24B2297722700232736 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		299BD24D2297727A00232736 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,11 @@
 			children = (
 				299BD22E2297706F00232736 /* FnSwift.h */,
 				299BD22F2297706F00232736 /* Info.plist */,
+				299BD2452297708000232736 /* FnSwift.swift */,
+				299BD2492297713400232736 /* KeyPathObject.swift */,
+				299BD24B2297722700232736 /* Configurable.swift */,
+				299BD247229770C300232736 /* Buildable.swift */,
+				299BD24D2297727A00232736 /* Condition.swift */,
 			);
 			path = FnSwift;
 			sourceTree = "<group>";
@@ -148,6 +163,7 @@
 				TargetAttributes = {
 					299BD22A2297706F00232736 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					299BD2332297706F00232736 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299BD248229770C300232736 /* Buildable.swift in Sources */,
+				299BD2462297708000232736 /* FnSwift.swift in Sources */,
+				299BD24E2297727A00232736 /* Condition.swift in Sources */,
+				299BD24C2297722700232736 /* Configurable.swift in Sources */,
+				299BD24A2297713400232736 /* KeyPathObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +362,7 @@
 		299BD2402297706F00232736 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ol.leif.FnSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +389,7 @@
 		299BD2412297706F00232736 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +415,7 @@
 		299BD2432297706F00232736 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8SAX62V2;
 				INFOPLIST_FILE = FnSwiftTests/Info.plist;
@@ -409,6 +434,7 @@
 		299BD2442297706F00232736 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M8SAX62V2;
 				INFOPLIST_FILE = FnSwiftTests/Info.plist;
