@@ -14,6 +14,7 @@ public extension Bool {
         return self ? block() : self
     }
     
+    @discardableResult
     func `true`(_ block: () -> Void) -> Bool {
         if self {
             block()

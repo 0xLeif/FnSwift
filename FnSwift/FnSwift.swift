@@ -54,7 +54,8 @@ public func fn_while(_ condition: () -> Bool,
     
     action()
     
-    fn_while(condition, action)
+    fn_while(condition,
+             action)
 }
 
 public func fn_for(_ count: Int,

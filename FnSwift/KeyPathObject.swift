@@ -13,7 +13,7 @@ precedencegroup KeyPathPrecedence {
     higherThan: MultiplicationPrecedence
 }
 
-infix operator ...: KeyPathPrecedence
+infix operator ~: KeyPathPrecedence
 
 @discardableResult
 public func set<T,E>(obj: inout T, path: ReferenceWritableKeyPath<T, E>, value: E) -> T {
@@ -31,11 +31,11 @@ public class KPObject<T,E> {
     }
 }
 
-public func ...<T,E>(obj: T, path: ReferenceWritableKeyPath<T, E>) -> KPObject<T, E> {
+public func ~<T,E>(obj: T, path: ReferenceWritableKeyPath<T, E>) -> KPObject<T, E> {
     return KPObject(obj: obj, path: path)
 }
 
-public func ...<T,E>(obj: KPObject<T,E>, path: ReferenceWritableKeyPath<T, E>)  -> KPObject<T, E> {
+public func ~<T,E>(obj: KPObject<T,E>, path: ReferenceWritableKeyPath<T, E>)  -> KPObject<T, E> {
     obj.path = path
     return obj
 }
@@ -50,11 +50,11 @@ public func +<T,E>(obj: KPObject<T,E>, value: E) -> T {
 
 //var v = UIView()
 //
-//let view: UIView = v ... \.backgroundColor + .red
+//let view: UIView = v ~ \.backgroundColor + .red
 //
 //
-//((v ... \.layer.cornerRadius + 3)
-//    ... \.backgroundColor + .blue)
-//    ... \.layer.borderWidth + 6
+//((v ~ \.layer.cornerRadius + 3)
+//    ~ \.backgroundColor + .blue)
+//    ~ \.layer.borderWidth + 6
 //
 //print(v.backgroundColor)

@@ -12,7 +12,7 @@ import Foundation
 public protocol Buildable {
     init()
     init(_ build: (inout Self) -> Void)
-    static func +(_ lhs: inout Self, _ block: (inout Self) -> Void) -> Void
+    static func ...(_ lhs: inout Self, _ block: (inout Self) -> Void) -> Void
 }
 
 public extension Buildable {
@@ -23,7 +23,7 @@ public extension Buildable {
         self = s
     }
     
-    static func +(_ lhs: inout Self, _ block: (inout Self) -> Void) -> Void {
+    static func ...(_ lhs: inout Self, _ block: (inout Self) -> Void) -> Void {
         var s = lhs
         block(&s)
         lhs = s
@@ -68,7 +68,7 @@ public extension Buildable {
 //var petOne = Pet {
 //    return $0
 //}
-//petOne + {
+//petOne ... {
 //    $0.name = "New NAME"
 //}
 //

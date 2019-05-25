@@ -13,8 +13,9 @@
 		299BD2462297708000232736 /* FnSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD2452297708000232736 /* FnSwift.swift */; };
 		299BD248229770C300232736 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD247229770C300232736 /* Buildable.swift */; };
 		299BD24A2297713400232736 /* KeyPathObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD2492297713400232736 /* KeyPathObject.swift */; };
-		299BD24C2297722700232736 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD24B2297722700232736 /* Configurable.swift */; };
 		299BD24E2297727A00232736 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD24D2297727A00232736 /* Condition.swift */; };
+		29C20B9722989A3400944009 /* ConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C20B9622989A3400944009 /* ConditionTests.swift */; };
+		29C20B992298A1A200944009 /* BuildableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C20B982298A1A200944009 /* BuildableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,9 @@
 		299BD2452297708000232736 /* FnSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FnSwift.swift; sourceTree = "<group>"; };
 		299BD247229770C300232736 /* Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
 		299BD2492297713400232736 /* KeyPathObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathObject.swift; sourceTree = "<group>"; };
-		299BD24B2297722700232736 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		299BD24D2297727A00232736 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		29C20B9622989A3400944009 /* ConditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionTests.swift; sourceTree = "<group>"; };
+		29C20B982298A1A200944009 /* BuildableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,6 @@
 				299BD22F2297706F00232736 /* Info.plist */,
 				299BD2452297708000232736 /* FnSwift.swift */,
 				299BD2492297713400232736 /* KeyPathObject.swift */,
-				299BD24B2297722700232736 /* Configurable.swift */,
 				299BD247229770C300232736 /* Buildable.swift */,
 				299BD24D2297727A00232736 /* Condition.swift */,
 			);
@@ -97,6 +98,8 @@
 			children = (
 				299BD2392297706F00232736 /* FnSwiftTests.swift */,
 				299BD23B2297706F00232736 /* Info.plist */,
+				29C20B9622989A3400944009 /* ConditionTests.swift */,
+				29C20B982298A1A200944009 /* BuildableTests.swift */,
 			);
 			path = FnSwiftTests;
 			sourceTree = "<group>";
@@ -213,7 +216,6 @@
 				299BD248229770C300232736 /* Buildable.swift in Sources */,
 				299BD2462297708000232736 /* FnSwift.swift in Sources */,
 				299BD24E2297727A00232736 /* Condition.swift in Sources */,
-				299BD24C2297722700232736 /* Configurable.swift in Sources */,
 				299BD24A2297713400232736 /* KeyPathObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				299BD23A2297706F00232736 /* FnSwiftTests.swift in Sources */,
+				29C20B9722989A3400944009 /* ConditionTests.swift in Sources */,
+				29C20B992298A1A200944009 /* BuildableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
