@@ -24,9 +24,7 @@ public extension Buildable {
     }
     
     static func ...(_ lhs: inout Self, _ block: (inout Self) -> Void) -> Void {
-        var s = lhs
-        block(&s)
-        lhs = s
+        block(&lhs)
     }
 }
 
