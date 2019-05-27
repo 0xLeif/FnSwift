@@ -16,6 +16,7 @@
 		299BD24E2297727A00232736 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BD24D2297727A00232736 /* Condition.swift */; };
 		29C20B9722989A3400944009 /* ConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C20B9622989A3400944009 /* ConditionTests.swift */; };
 		29C20B992298A1A200944009 /* BuildableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C20B982298A1A200944009 /* BuildableTests.swift */; };
+		29C20B9F229C38E100944009 /* KeyPathObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C20B9E229C38E100944009 /* KeyPathObjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		299BD24D2297727A00232736 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		29C20B9622989A3400944009 /* ConditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionTests.swift; sourceTree = "<group>"; };
 		29C20B982298A1A200944009 /* BuildableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildableTests.swift; sourceTree = "<group>"; };
+		29C20B9E229C38E100944009 /* KeyPathObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathObjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				299BD23B2297706F00232736 /* Info.plist */,
 				29C20B9622989A3400944009 /* ConditionTests.swift */,
 				29C20B982298A1A200944009 /* BuildableTests.swift */,
+				29C20B9E229C38E100944009 /* KeyPathObjectTests.swift */,
 			);
 			path = FnSwiftTests;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				299BD23A2297706F00232736 /* FnSwiftTests.swift in Sources */,
 				29C20B9722989A3400944009 /* ConditionTests.swift in Sources */,
 				29C20B992298A1A200944009 /* BuildableTests.swift in Sources */,
+				29C20B9F229C38E100944009 /* KeyPathObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

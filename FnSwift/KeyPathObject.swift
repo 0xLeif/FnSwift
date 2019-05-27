@@ -40,6 +40,7 @@ public func ~<T,E>(obj: KPObject<T,E>, path: ReferenceWritableKeyPath<T, E>)  ->
     return obj
 }
 
+@discardableResult
 public func +<T,E>(obj: KPObject<T,E>, value: E) -> T {
     var o = obj.obj
     set(obj: &o, path: obj.path, value: value)
